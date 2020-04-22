@@ -4,84 +4,156 @@
   <head>
     <title>WEB1 - HTML</title>
     <meta charset="UTF-8">
+    <style>
+      body {
+        margin: 0px;
+      }
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164185035-1"></script>
+      a:link {
+        color: black;
+        text-decoration: none
+      }
 
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-164185035-1');
-    </script>
+      a:visited {
+        color: black;
+      }
+
+      a:hover {
+        color: red;
+      }
+
+      h1 {
+        font-size: 45px;
+        text-align: center;
+        border-bottom: 1px solid gray;
+        margin: 0px;
+        padding: 20px;
+      }
+
+      #grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+
+      #grid ol {
+        border-right: 1px solid gray;
+        width: 100px;
+        margin: 0px;
+        padding: 20px;
+        padding-left: 33px;
+      }
+
+      #article {
+        padding-left: 25px;
+      }
+    </style>
   </head>
   <body>
     <h1><a href="index.html">WEB</a></h1>
+    <div id="grid">
+        <ol>
+          <li><a href="1.html">HTML</a></li>
+          <li><a href="2.html">CSS</a></li>
+          <li><a href="3.html">Javascript</a></li>
+        </ol>
 
-    <ol>
-      <li><a href="1.html">HTML</a></li>
-      <li><a href="2.html">CSS</a></li>
-      <li><a href="3.html">Javascript</a></li>
-    </ol>
+      <div id="article">
+        <h2>What is HTML?</h2>
+        <p>
+          <a href="https://www.w3.org/html5/" target="_blank" title="HTML5 Information">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications. Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+        </p>
 
-    <!--
-    <ul>
-      <li>egoing</li>
-      <li>k8805</li>
-      <li>youbin</li>
-    </ul>
-    -->
+        <img src="img/html.jpg" width="100%">
 
-    <h2>What is HTML?</h2>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/UB1O30fR-EE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-    <p>
-      <a href="https://www.w3.org/html5/" target="_blank" title="HTML5 Information">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications. Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
-    </p>
-
-    <img src="img/html.jpg" width="100%">
-
-    <p style = "margin-top:45px;">
-      HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
-    </p>
-
-    <p>
-      <div id="disqus_thread"></div>
-      <script>
-        (function() {
-          var d = document, s = d.createElement('script');
-          s.src = 'https://html-project.disqus.com/embed.js';
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s);
-        })();
-      </script>
-
-      <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-          var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-          s1.async=true;
-          s1.src='https://embed.tawk.to/5e9e511d35bcbb0c9ab3164d/default';
-          s1.charset='UTF-8';
-          s1.setAttribute('crossorigin','*');
-          s0.parentNode.insertBefore(s1,s0);
-        })();
-      </script>
-
-      <noscript>
-        Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-      </noscript>
-    </p>
-
-    <!--
-      <h1>W3C</h1>
-
-      <h1>This is heading 1</h1>
-      <h2>This is heading 2</h2>
-      <h3>This is heading 3</h3>
-      <h4>This is heading 4</h4>
-      <h5>This is heading 5</h5>
-      <h6>This is heading 6</h6>
-    -->
+        <p style = "margin-top:45px;">
+          HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+        </p>
+      </div>
+    </div>
   </body>
 </html>
+
+<!-- Google Analysis -> inside <head> tags
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164185035-1"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-164185035-1');
+</script>
+-->
+
+<!--
+<h1><a href="index.html"><font color="red">WEB</font></a></h1>
+
+<ol>
+  <li><a href="1.html"><font color="red">HTML</font></a></li>
+  <li><a href="2.html"><font color="red">CSS</font></a></li>
+  <li><a href="3.html"><font color="red">Javascript</font></a></li>
+</ol>
+-->
+
+<!-- Unordered List
+<ul>
+  <li>egoing</li>
+  <li>k8805</li>
+  <li>youbin</li>
+</ul>
+-->
+
+<!-- <font> tag is not recommended
+<h1><a href="index.html"><font color="red">WEB</font></a></h1>
+
+<ol>
+  <li><a href="1.html"><font color="red">HTML</font></a></li>
+  <li><a href="2.html"><font color="red">CSS</font></a></li>
+  <li><a href="3.html"><font color="red">Javascript</font></a></li>
+</ol>
+-->
+
+<!--
+  <h1>W3C</h1>
+
+  <h1>This is heading 1</h1>
+  <h2>This is heading 2</h2>
+  <h3>This is heading 3</h3>
+  <h4>This is heading 4</h4>
+  <h5>This is heading 5</h5>
+  <h6>This is heading 6</h6>
+-->
+
+<!-- Inserting Video
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/UB1O30fR-EE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+-->
+
+<!-- Disqus (Commenting)
+<p>
+  <div id="disqus_thread"></div>
+  <script>
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://html-project.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>
+    Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
+</p>
+-->
+
+<!-- Tawk.to (Live Chatting)
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+  var   s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5e9e511d35bcbb0c9ab3164d/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+  })();
+</script>
+-->

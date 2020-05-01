@@ -4,25 +4,9 @@
   <head>
     <title>WEB - Welcome</title>
     <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script>
-      function ThemeChanger (self) {
-        var target = document.querySelector('body');
-        if (self.value === 'Dark') {
-          target.style.backgroundColor = 'black';
-          target.style.color = 'white';
-          self.style.color = 'black';
-          self.style.backgroundImage = 'linear-gradient(to bottom, white, #949494)';
-          self.value = 'Light';
-        } else {
-          target.style.backgroundColor = 'white';
-          target.style.color = 'black';
-          self.style.color = 'white';
-          self.style.backgroundImage = 'linear-gradient(to bottom, black, #484848)';
-          self.value = 'Dark';
-        }
-      }
-    </script>
+    <script src="colors.js"></script>
   </head>
   <body>
     <h1><a href="index.html">WEB</a></h1>
@@ -34,7 +18,7 @@
       </ol>
 
       <div id="article">
-        <input id="color-theme" type="button" value="Dark" onclick="ThemeChanger(this);">
+        <input id="color-theme" type="button" value="Dark" onclick="themeChanger(this);">
         <p>
           The World Wide Web (WWW), commonly known as the Web, is an information system where documents and other web resources are identified by Uniform Resource Locators (URLs, such as https://www.example.com/), which may be interlinked by hypertext, and are accessible over the Internet. The resources of the WWW are transferred via the Hypertext Transfer Protocol (HTTP) and may be accessed by users by a software application called a web browser and are published by a software application called a web server.
         </p>
